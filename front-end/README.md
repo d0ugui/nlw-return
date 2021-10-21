@@ -20,6 +20,7 @@
 - **Vite** é uma framework que auxilia na criação de uma base para o projeto, parecido com o CRA, com algumas diferenças, inclusive de performance
 - **SaSS** pré-processador CSS
 - **React Icons** biblioteca de ícones
+- **Axios** para realizar requisições AJAX
 
 ## 🧪 Tecnologias
 
@@ -29,6 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e bibliotecas:
 - [React](https://reactjs.org)
 - [SaSS](https://sass-lang.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- [Axios](https://github.com/axios/axios)
 
 ## 🔖 Layout
 
