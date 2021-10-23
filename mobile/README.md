@@ -19,6 +19,9 @@
 
 - **Expo** é uma ferramenta que auxilia na criação de projetos em react native, com várias bibliotecas prontas de forma nativa para uso
 - **Typescript** superset javascript para tipagem da aplicação
+- **Moti** biblioteca de animações React Native
+- **Axios** para requisições AJAX
+- **Socket.IO** tratamento do realmtime da aplicação
 
 ## 🧪 Tecnologias
 
@@ -27,6 +30,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias e bibliotecas:
 - [Expo](https://expo.dev/)
 - [React Native](https://reactnative.dev/)
 - [Typescript](https://www.typescriptlang.org/)
+- [Moti](https://moti.fyi/)
+- [Axios](https://github.com/axios/axios)
+- [Socket.IO](https://socket.io/)
 
 ## 🔖 Layout
 
