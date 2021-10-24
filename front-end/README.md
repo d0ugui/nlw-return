@@ -12,7 +12,7 @@
 <!-- <br> -->
 
 <p align="center">
-  <img alt="NLW Heat - Front-end" src="assets/tela.png" width="100%">
+  <img alt="NLW Heat - Front-end" src="src/assets/tela.png" width="100%">
 </p>
 
 ## 📖 Projeto
