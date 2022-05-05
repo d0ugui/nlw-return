@@ -1,33 +1,20 @@
-datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
-}
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
   provider = "prisma-client-js"
 }
 
-//** Definindo estrutura da tabela
-model User {
-  id         String @id @default(uuid())
-  name       String
-  github_id  Int
-  avatar_url String
-  login      String
-
-  //* Definindo nome da tabela
-  messages Message[]
-  @@map("users")
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
 
-//* Tabela de mensagens
-model Message {
-  id         String   @id @default(uuid())
-  text       String
-  created_at DateTime @default(now())
+model Feedback {
+  id         String  @id @default(uuid())
+  type       String
+  comment    String
+  screenshot String?
 
-  user User @relation(fields: [user_id], references: [id])
-
-  user_id String
-  @@map("messages")
+  @@map("feedbacks")
 }
