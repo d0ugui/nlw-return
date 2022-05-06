@@ -1,9 +1,21 @@
 import express from 'express';
+import { prisma } from './prsima';
 
 const app = express();
 
-app.get('/users', (req, res) => {
-  return res.send('aloou')
+app.use(express.json());
+
+app.post('/feedbacks', async (req, res) => {
+  const { type, comment } = req.body;
+
+  const feedback = await prisma.feedback.create({
+    data: {
+      type,
+      comment
+    }
+  })
+
+  return res.status(201).json({ data: feedback })
 })
 
 app.listen(3333, () => {
