@@ -1,5 +1,5 @@
-import { MailAdapter, SendMailData } from "../mail-adapater";
 import nodemailer from 'nodemailer';
+import { MailAdapter, SendMailData } from "../mail-adapater";
 
 const transport = nodemailer.createTransport({
   host: "smtp.mailtrap.io",
@@ -12,7 +12,7 @@ const transport = nodemailer.createTransport({
 
 
 export class NodemailerMailAdapter implements MailAdapter {
-  async sendMail({ subject, body }: SendMailData) {
+  async sendMail({ subject, body }: SendMailData): Promise<void> {
     await transport.sendMail({
       from: 'Equipe Feedget <oi@fedget.com>',
       to: 'Douglas Oliveira <douglaspo_97@outlook.com>',
